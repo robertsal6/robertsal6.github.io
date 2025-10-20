@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<style>
+		.item1 { 
+			grid-area: site; 
+			background: #111111;
+			text: white;
+			padding: 20px;
+			margin: -8px;
+			font-size: 15px;
+		}
+		.item2 { 
+			grid-area: nav;
+			background: #111111;
+			text: white;
+			padding: 20px;
+			margin: -8px;
+			text-align: right;
+			font-size: 15px;	
+		}
+		.item3 { 
+			grid-area: main; 
+			margin: 30px;
+		}
+		.item4 { 
+			grid-area: socials;
+			background: #111111;
+			color: white;
+			padding: 20px;
+			margin: -8px;
+			text-align: left;
+			font-size: 15px;
+		}
+		.item5 { 
+			grid-area: footer;
+			background: #111111;
+			color: white;
+			padding: 20px;
+			margin: -8px;
+			text-align: center;
+			font-size: 15px;
+		}
+		.item6 { 
+			grid-area: fnav;
+			background: #111111;
+			text: white;
+			padding: 20px;
+			margin: -8px;
+			text-align: right;
+			font-size: 15px;
+		}
+		.grid-container {
+			display: grid;
+			grid: 'site nav nav nav'
+			'main main main main'
+			'fnav fnav fnav fnav'
+			'socials footer footer footer';
+		}
+		body {
+			font-family: Arial;
+			background-color: white;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			margin: 20px;
+		}
+		hr {
+			border: 1px solid black;
+		}
+    </style>
+</head>
+<body>
+<div class="grid-container">
+	<div class="item1">
+		<br>
+		<a href="landingPage.html">Site-name</a>
+		<br>
+		<br>
+	</div>
+	
+	<div class="item2">
+		<br>
+		<a href="userGuide.html">User Guide</a>
+		<a href="faqs.html">FAQs</a>
+		<a href="troubleshooting.html">Troubleshooting</a>
+		<a href="contact.html">Contact</a>
+		<br>
+		<br>
+	</div>
+	<div class="item3">
+		<h1> Contact Support </h1>
+		<img src="contact.png" style="max-width: 100%; height: auto; align: center;">
+		<hr>
+		<h2> Submit a Support Ticket </h2>
+		<p> If If you want to reach our Support Team directly, 
+		submit a ticket by filling out the form below:</p>
+		<form action="/action_page.php">
+			<label for="name">Name:</label><br>
+			<input type="text" id="name" name="name" required><br>
+			<label for="email">Email:</label><br>
+			<input type="text" id="email" name="email" required><br>
+			<label for="subject">Subject:</label><br>
+			<input type="text" id="subject" name="subject" required><br>
+			<label for="message">Message:</label><br>
+			<textarea id="message" name="message" rows="5" cols="30"> </textarea><br>
+			<input type="submit" value="Submit">
+		</form> 
+		<hr>
+		<p>** For technical assistance, you can visit our User-Guide, 
+		FAQs and Troubleshooting pages for information. </p>
+	</div>
+	<div class="item6">
+		<br>
+		<a href="userGuide.html">User Guide</a>
+		<a href="faqs.html">FAQs</a>
+		<a href="troubleshooting.html">Troubleshooting</a>
+		<a href="contact.html">Contact</a>
+		<br>
+	</div>
+	<div class="item4">
+		<p> Stay connected :</p>
+	</div>
+	<div class="item5">
+		<br>
+		<br>
+		<p>© 2025 Company Name. All rights reserved.</p>
+	</div>
+</div>
+</body>
+</html>
